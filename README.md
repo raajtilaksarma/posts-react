@@ -1,2 +1,3 @@
 # posts-react
-A simple react app for posts
+A React app for adding and showing posts
+

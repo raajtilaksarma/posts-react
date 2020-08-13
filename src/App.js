@@ -5,6 +5,7 @@ import PostForm from './components/PostForm/PostForm'
 import PostList from './components/PostList/PostList';
 import { Container } from 'react-bootstrap';
 import cuid from 'cuid';
+import StarWars from './components/StarWars/StarWars';
 
 class App extends Component {
   state = { 
@@ -38,11 +39,13 @@ class App extends Component {
         <PostForm add={this.addPost}/>
           <hr/>
             <PostList 
-            posts = {this.state.posts} 
-            status={this.state.viewPosts} 
-            viewPost={this.viewPostsHandler}
-            delete={this.deletePostHandler}
+              posts = {this.state.posts} 
+              status={this.state.viewPosts} 
+              viewPost={this.viewPostsHandler}
+              delete={this.deletePostHandler}
             />
+          <hr/>
+            <StarWars />
       </Container>
      );
   }

@@ -26,7 +26,7 @@ class PostForm extends Component {
             <Form onSubmit={this.createPostHandler}>
                 <h3>Add a post</h3>
                 <input type='text' className='form-control' value={this.state.post} onChange={this.postChangeHandler}/>
-                <Button type='submit' variant='info' className='mt-2'>Submit</Button>
+                <Button type='submit' size='lg' variant='info' className='mt-2'>Submit</Button>
             </Form>
          );
     }

@@ -6,13 +6,13 @@ import './post.css';
 
 const Post = (props) => {
 	return (
-		<Grid className = 'delete-post'>
+		<Grid className = 'post-row'>
 			<Paper elevation = { 3 }>
-				<Grid className ='delete-post-body'  container>
+				<Grid className ='post-row-body'  container>
 					<Grid xs = { 10 } item>
 						{props.post.text}
 					</Grid>
-					<Grid variant='outline-primary' onClick={()=>props.delete(props.post.id)} xs = { 2 } align='right' item>
+					<Grid className = 'delete-post' variant='outline-primary' onClick={()=>props.delete(props.post.id)} xs = { 2 } align='right' item>
 						<DeleteIcon/>
 					</Grid>
 				</Grid>

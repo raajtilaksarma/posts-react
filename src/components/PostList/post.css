@@ -1,6 +1,9 @@
-.delete-post{
+.post-row{
 	margin-top     : 5px;
 }
-.delete-post-body{
-	padding  : 10px;
+.post-row-body{
+	padding  : 10px;	
+}
+.delete-post {
+	cursor : pointer;
 }
